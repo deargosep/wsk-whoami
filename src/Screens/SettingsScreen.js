@@ -13,6 +13,7 @@ export default function SettingsScreen() {
         <View style={{backgroundColor:theme.colors.primary, flex:1, paddingTop:40}}>
         <View style={{padding: 16}}>
         <Title style={{ marginBottom: 35, fontSize: 24, fontWeight:'bold' }}>Настройки</Title>
+        <Title style={{ }}></Title>
         <Title style={{ }}>Тема оформления</Title>
         <View style={{marginVertical:10}}>
         <Paragraph style={{fontSize:16}}>Активная тема</Paragraph>
@@ -31,7 +32,7 @@ export default function SettingsScreen() {
 }
 
 
-function Color ({style, active, theme}) {
+export function Color ({style, active, theme}) {
     const [currtheme, setTheme] = useRecoilState(theme_state)
     return (
         <TouchableOpacity disabled={active} onPress={()=>{

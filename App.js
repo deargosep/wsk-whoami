@@ -32,6 +32,7 @@ function App() {
       accent: getColors.accentColor,
       cardColor: getColors.backgroundColor === '#C2CFF2' ? 'white': getColors.accentColor,
       iconColor: getColors.backgroundColor === '#C2CFF2' ? 'white': 'black',
+      button: getColors.backgroundColor === '#C2CFF2' ? getColors.accentColor:'black'
     }
   }
   return (
